@@ -21,7 +21,7 @@
 
 module.exports = {
 
-  db: process.env.MONGODB || 'mongodb://' + process.env.DATABASE_1_PORT_27,
+  db: process.env.MONGODB || || 'mongodb://127.0.0.1:27017',
 
   sessionSecret: process.env.SESSION_SECRET || 'Your Session Secret goes here',
 
